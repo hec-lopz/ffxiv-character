@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find your FFXIV character</title>
+</head>
+<body>
+  <header>
+    <form name="search_params" action="#">
+      <label for="search-bar">Introduce el nombre de tu personaje: </label>
+      <input type="text" class="search-bar" id="search-bar">
+      <label for="server">Servidor</label>
+      <input name="server" list="servers" placeholder="Servidor">
+      <datalist id="servers">
+      </datalist>
+      <button>Buscar</button>
+    </form>
+  </header>
+  <main class="character-component">
+    <section class="character__info">
+      <figure class="character__info--avatar">
+        <img src="" alt="">
+      </figure>
+      <h1 class="character__info--name"></h1>
+      <div class="character__info--location">
+        <div class="character-fc"></div>
+        <div class="character-server"></div>
+      </div>
+    </section>
+    <section class="character__job">
+      <div class="character__job--gear-1"></div>
+      <div class="character__job--info">
+        <i class="job-icon"></i>
+        <h1 class="job-name"></h1>
+        <span class="job-level"></span>
+      </div>
+      <div class="character__job--gear-2"></div>
+      
+    </section>
+    
+  </main>
+  <script src="./js/main.js"></script>
+</body>
+</html>
