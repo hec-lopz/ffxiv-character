@@ -1,0 +1,23 @@
+{
+  "name": "ffxiv-character",
+  "version": "1.0.0",
+  "description": "API: https://xivapi.com/docs/Welcome",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hec-lopz/ffxiv-character.git"
+  },
+  "keywords": [],
+  "author": "Hector Lopez <hlopezcarballo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hec-lopz/ffxiv-character/issues"
+  },
+  "homepage": "https://github.com/hec-lopz/ffxiv-character#readme",
+  "devDependencies": {
+    "create-react-app": "^4.0.1"
+  }
+}

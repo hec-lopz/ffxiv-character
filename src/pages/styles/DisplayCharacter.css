@@ -1,0 +1,8 @@
+.CharacterDisplay {
+  min-height: 100vh;
+  max-width: 270px;
+  margin: 0 auto;
+}
+.CharacterDisplay > .character {
+  margin-bottom: 10px;
+}

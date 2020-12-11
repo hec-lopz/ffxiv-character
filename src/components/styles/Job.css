@@ -1,0 +1,17 @@
+.job {
+  width: 100%;
+  background: var(--bg-color);
+  color: var(--white-color);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+.job__name {
+  font-family: var(--title-font);
+  font-size: var(--title-font-size);
+  text-transform: capitalize;
+}
+.job__level {
+  font-size: var(--small-font-size);
+  text-transform: uppercase;
+}

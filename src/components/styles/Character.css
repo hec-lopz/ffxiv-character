@@ -1,0 +1,20 @@
+.character__info {
+  background-color: var(--bg-color);
+  color: var(--white-color);
+  height: 70px;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.character__name {
+  font-size: var(--title-font-size);
+  font-family: var(--title-font);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.character__location {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+}
