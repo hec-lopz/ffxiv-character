@@ -1,16 +1,38 @@
 import React, { Component } from "react";
+import "./styles/SearchBar.css";
 
 class SearchBar extends Component {
   render() {
+    console.log(this.props.error);
     return (
-      <form name="search_params" action="#">
-        <label for="search-bar">Introduce el nombre de tu personaje: </label>
-        <input type="text" class="search-bar" id="search-bar" />
-        <label for="server">Servidor</label>
-        <input name="server" list="servers" placeholder="Servidor" />
-        <datalist id="servers">{this.props.servers.map()}</datalist>
-        <button>Buscar</button>
-      </form>
+      <div className="SearchBar-container">
+        <form className="SearchBar" name="search_params" action="#">
+          <input
+            type="text"
+            className="SearchBar__input"
+            id="search-bar"
+            placeholder="Name"
+            name="name"
+          />
+          <input
+            className="SearchBar__input"
+            name="server"
+            list="servers"
+            placeholder="Server"
+          />
+          <datalist id="servers">
+            {this.props.servers.map((server, i) => (
+              <option key={i} value={server}></option>
+            ))}
+          </datalist>
+          {this.props.error && (
+            <p className="SearchBar__Warning">{this.props.error}</p>
+          )}
+          <button onClick={this.props.onSubmit} className="SearchBar__btn">
+            Search
+          </button>
+        </form>
+      </div>
     );
   }
 }
